@@ -1,0 +1,94 @@
+html {
+	background: url(https://wallpaperaccess.com/full/2029165.jpg) no-repeat;
+	-moz-background-size: 100%; 
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	color: #5D5C61;
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 3vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}
+a {
+	text-decoration: none;
+	color: #5D5C61;
+	font-family: 'PT Sans Caption', sans-serif;
+}
+#storeDiv  {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 2vh 0;
+	font-size: 3vh;
+}
+#storeDiv > div {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+.ishop {
+	display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+	justify-content: space-around;
+    align-items: center;
+	padding: 15px 0;
+}
+.ProductsGrid {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: center;
+	width: 90%;
+	padding: 13px;
+}
+.shopName {
+	display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+	border: #5D5C61 solid 1px;
+	padding: 10px;
+	margin-right: 60px;
+}
+.ProductsGrid > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.productElement {
+	width: 100%;
+}
+.productElement > div {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border: #5D5C61 solid 1px;
+}
+.productElement > div:first-child {
+	justify-content: flex-start;
+	width: 50%;
+}
+.productElement > div:nth-child(2),
+.productElement > div:nth-child(3),
+.productElement > div:nth-child(4) {
+	width: 10%;
+}
+
+input {
+	width: 90%;
+	height: 5vh;
+}
