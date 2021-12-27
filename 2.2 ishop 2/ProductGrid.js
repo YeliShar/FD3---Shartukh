@@ -19,17 +19,21 @@ var ProductGrid = React.createClass({
 			Samsungshop: this.props.Samsungshop,
 			SamsungnameProduct: this.props.SamsungnameProduct,
 			selectedProductCode: null,
+			deleleteProductCode: null,
 		};
 	},
 	onClickHandler: function(code) {
 		this.setState({selectedProductCode: code})
 	},
+	deleteClick: function(code) {
+		this.setState({deleleteProductCode: code})
+	},
 
-		render: function() {
-			var SamsungNameShop = [];
+	render: function() {
+		var SamsungNameShop = [];
 		this.state.Samsungshop.forEach(element => {
-		var SamsungshopName = Object.values(element);
-		var nameShopCode = 		
+			var SamsungshopName = Object.values(element);
+			var nameShopCode = 		
 			React.DOM.div({className: 'shopName', key: SamsungshopName[0], }, SamsungshopName[1]);
 			SamsungNameShop.push(nameShopCode);
 		});
@@ -42,9 +46,11 @@ var ProductGrid = React.createClass({
 				stockBalances: element.stockBalances,
 				cbSelected: this.onClickHandler,
 				selectedProductCode: this.state.selectedProductCode,
-			}),
+				cbDelete: this.deleteClick,
+				deleleteProductCode:  this.state.selectedProductCode,
+			}),	
 			)
 			);
-			return React.DOM.div(null, product)
-		}
+		return React.DOM.div(null, product)
+	}
 });
