@@ -38,11 +38,11 @@ var ProductGrid = React.createClass({
 		});
 
 		var product = [];
-		var deleteCode = [];
-		deleteCode.push(parseInt(this.state.deleleteProductCode - 1));
+/*		var deleteCode = [];
+		deleteCode.push(parseInt(this.state.deleleteProductCode - 1)); */
 
 		this.state.SamsungnameProduct.forEach ( element => {
-			deleteCode.map( x => delete product[x] )
+//			deleteCode.map( x => delete product[x] )
 			var productCode = 		
 			React.DOM.div({key: element.code, className:'ishop', }, SamsungNameShop, 
 			React.createElement (ProductRow, {Samsungshop: this.props.Samsungshop, 
