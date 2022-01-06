@@ -27,7 +27,9 @@ var ProductGrid = React.createClass({
 		deleteClick: function(code) {
 			var newArray = [];
 			this.state.SamsungnameProduct.forEach (e => {
-				e.code != code ? newArray.push(e) : e.code == e.code
+				if (e.code != code) {
+					newArray.push(e)
+				}
 			}) 
 			this.setState({SamsungnameProduct: newArray})
 		},
